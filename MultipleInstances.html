@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Computed Properties</title>
+        <link href="styles.css" rel="stylesheet"/>
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <h1> Multiple Instances</h1>
+
+
+        <div id="vue-app-one">
+            <p>{{title}}</p>
+            <p>{{greet}}</p>
+        </div>
+
+
+
+
+        <div id="vue-app-two">
+            <p>{{title}}</p>
+            <p>{{greet}}</p>
+            <button v-on:click="changeTitle">Change title of App1</button>
+        </div>
+
+        <script src="MultipleInstances.js"></script>
+        </body>
+       </html>

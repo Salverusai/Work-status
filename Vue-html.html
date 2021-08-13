@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<h2> VueJS Tutorials </h2>
+<!-- <link href="styles.css" rel="stylesheet"/> -->
+<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<div id="vue-app">
+<h1>{{name}}</h1>
+<h1>{{age}}</h1>
+<p>{{gender}}</p>
+<p>{{number}}</p>
+<p>{{greet('morning')}}</p>
+<a v-bind:href="website">The Website </a><br><br>
+<input type="text" v-bind:value="website"/>
+<button v-on:click="add"> Add</button>
+<button v-on:click="number++">Addby100</button><br>
+<label>Name:</label>
+<input type="text"/><br>
+<label>Age</label>
+<input type="text"/>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
